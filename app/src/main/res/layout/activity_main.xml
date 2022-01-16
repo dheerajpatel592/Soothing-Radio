@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/Soothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginRight="5dp"
+            android:textSize="80sp" />
+
+        <ImageView
+            android:id="@+id/headphones"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_headphones"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/thing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thing"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="80sp" />
+        <!--        android:textColor="#FF8B5B"-->
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Soothing"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:fontFamily="casual"
+        android:text="Radio"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/radio"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listeners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listeners : "
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="casual"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Currently Playing"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/song_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="casual"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/artist_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_pause"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_play_circle" />
+
+    <ImageView
+        android:id="@+id/prev_Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/content"
+        android:layout_toLeftOf="@id/play_pause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_prev_circle" />
+
+    <ImageView
+        android:id="@+id/next_Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/content"
+        android:layout_toRightOf="@id/play_pause"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_next_circle" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_View"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_below="@id/content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+    <LinearLayout
+        android:id="@+id/share"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/play_pause">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_share"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:fontFamily="casual"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:text="Share" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rate"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/play_pause">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_rate"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="casual"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:text="Rate" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image5"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/Soothing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/radio">
+        <TextView
+            android:id="@+id/S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginRight="5dp"
+            android:textSize="80sp" />
+
+        <ImageView
+            android:id="@+id/headphones"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_headphones"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/thing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thing"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="80sp" />
+        <!--        android:textColor="#FF8B5B"-->
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:fontFamily="casual"
+        android:text="Radio"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
