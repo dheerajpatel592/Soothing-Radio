@@ -1,4 +1,3 @@
-*Soothing Radio*
+# *Soothing Radio*
 
-PlayStore app link :
-https://play.google.com/store/apps/details?id=com.dheeraj.soothingradio
+PlayStore link : https://play.google.com/store/apps/details?id=com.dheeraj.soothingradio
